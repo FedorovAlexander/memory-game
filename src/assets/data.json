@@ -1,0 +1,121 @@
+[{
+    "id": 1,
+    "name": "bear",
+    "image": "/assets/images/bear_head.svg",
+    "flipped": false
+  },
+  {
+    "id": 2,
+    "name": "bison",
+    "image": "/assets/images/bison.svg",
+    "flipped": false
+  },
+  {
+    "id": 3,
+    "name": "bunny",
+    "image": "/assets/images/Bunny.svg",
+    "flipped": false
+  },
+  {
+    "id": 4,
+    "name": "bull",
+    "image": "/assets/images/Coat_of_arms.svg",
+    "flipped": false
+  },
+  {
+    "id": 5,
+    "name": "dog",
+    "image": "/assets/images/doushouqi-dog.svg",
+    "flipped": false
+  },
+  {
+    "id": 6,
+    "name": "elephant",
+    "image": "/assets/images/Elephant.svg",
+    "flipped": false
+  },
+  {
+    "id": 7,
+    "name": "donkey",
+    "image": "/assets/images/Esel.svg",
+    "flipped": false
+  },
+  {
+    "id": 8,
+    "name": "bird",
+    "image": "/assets/images/green-bird-2.svg",
+    "flipped": false
+  },
+  {
+    "id": 9,
+    "name": "owl",
+    "image": "/assets/images/gufo-civetta-architetto-04r.svg",
+    "flipped": false
+  },
+  {
+    "id": 10,
+    "name": "horse",
+    "image": "/assets/images/horse-brown800px.svg",
+    "flipped": false
+  },
+  {
+    "id": 11,
+    "name": "cat",
+    "image": "/assets/images/little-cat-vector.svg",
+    "flipped": false
+  },
+  {
+    "id": 12,
+    "name": "monkey",
+    "image": "/assets/images/MonkeyFace.svg",
+    "flipped": false
+  },
+  {
+    "id": 13,
+    "name": "mouse",
+    "image": "/assets/images/mouse-critter.svg",
+    "flipped": false
+  },
+  {
+    "id": 14,
+    "name": "panda",
+    "image": "/assets/images/panda.svg",
+    "flipped": false
+  },
+  {
+    "id": 15,
+    "name": "penguin",
+    "image": "/assets/images/penguin.svg",
+    "flipped": false
+  },
+  {
+    "id": 16,
+    "name": "pig",
+    "image": "/assets/images/Piggy.svg",
+    "flipped": false
+  },
+  {
+    "id": 17,
+    "name": "tiger",
+    "image": "/assets/images/tiger.svg",
+    "flipped": false
+  },
+  {
+    "id": 18,
+    "name": "turkey",
+    "image": "/assets/images/Turkey.svg",
+    "flipped": false
+  },
+  {
+    "id": 19,
+    "name": "walrus",
+    "image": "/assets/images/Walrus.svg",
+    "flipped": false
+  },
+  {
+    "id": 20,
+    "name": "woodpecker",
+    "image": "/assets/images/Woodpecker.svg",
+    "flipped": false
+  }
+]
