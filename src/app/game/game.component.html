@@ -1,9 +1,9 @@
 <section class="game">
   <div class="game__container">
     <ul class="game__cards-list">
-      <li class="game__card" *ngFor="let card of cards$ | async">
+      <ng-container *ngFor="let card of cards$ | async">
         <app-card [card]="card"></app-card>
-      </li>
+      </ng-container>
     </ul>
   </div>
 </section>

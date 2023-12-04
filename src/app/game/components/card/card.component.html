@@ -1,3 +1,8 @@
-<li class="card">
-  <img src="{{ card.image }}" alt="card-image" class="card__img" />
+<li class="card" [@cardFlip]="card.flipped" (click)="flipCard(card)">
+  <span class="card__image card__image--back"> front </span>
+  <img
+    src="{{ card.image }}"
+    alt="card-image "
+    class="card__image card__image--front"
+  />
 </li>

@@ -20,8 +20,7 @@ export class GameComponent implements OnInit {
   getCards(): void {
     this.cards$ = this.appService.getCards().pipe(
       map((cards: Card[]) => {
-        console.log(cards);
-        return cards;
+        return cards.concat(cards);
       })
     );
   }
