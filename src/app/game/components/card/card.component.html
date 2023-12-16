@@ -1,8 +1,16 @@
 <li class="card" [@cardFlip]="card.flipped" (click)="flipCard(card)">
-  <span class="card__image card__image--back"> front </span>
-  <img
-    src="{{ card.image }}"
-    alt="card-image "
-    class="card__image card__image--front"
-  />
+  <span class="card__side card__side--front">
+    <img
+      src="assets/default-image/card.jpg"
+      alt="card-back"
+      class="card__image card__image--back"
+    />
+  </span>
+  <div class="card__side card__side--back">
+    <img
+      src="{{ card.image }}"
+      alt="card-image "
+      class="card__image card__image--front"
+    />
+  </div>
 </li>
