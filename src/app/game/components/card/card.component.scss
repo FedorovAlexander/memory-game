@@ -1,5 +1,8 @@
 .card {
   perspective: 800px;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
 
   &__content {
     position: relative;
@@ -22,15 +25,21 @@
     font-weight: 700;
     cursor: pointer;
     user-select: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 
     &--front {
-      background: green;
       transform: rotateY(0deg);
     }
 
     &--back {
-      background: #23262d;
       transform: rotateY(-180deg);
     }
+  }
+
+  &__img {
+    width: auto;
+    height: 80%;
   }
 }
