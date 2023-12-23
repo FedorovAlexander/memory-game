@@ -1,7 +1,8 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { animate, state, style, transition, trigger } from "@angular/animations";
+import { Component, Input, OnInit } from "@angular/core";
 
-import { Card } from '../../../models/card.interface';
-import { cardFlipAnimation } from './card-flip.animation';
+import { Card } from "../../../models/card.interface";
+import { cardFlipAnimation } from "./card-flip.animation";
 
 @Component({
   selector: 'app-card',
@@ -11,13 +12,13 @@ import { cardFlipAnimation } from './card-flip.animation';
 })
 export class CardComponent implements OnInit {
   @Input() card!: Card;
+  flip: string = 'inactive';
 
   ngOnInit(): void {
     // console.log(this.card);
   }
 
-  flipCard(card: Card): void {
-    card.flipped = !card.flipped;
-    console.log(card);
+  toggleFlip() {
+    this.flip = this.flip == 'inactive' ? 'active' : 'inactive';
   }
 }

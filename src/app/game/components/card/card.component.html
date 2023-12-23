@@ -1,16 +1,6 @@
-<li class="card" [@cardFlip]="card.flipped" (click)="flipCard(card)">
-  <span class="card__side card__side--front">
-    <img
-      src="assets/default-image/card.jpg"
-      alt="card-back"
-      class="card__image card__image--back"
-    />
-  </span>
-  <div class="card__side card__side--back">
-    <img
-      src="{{ card.image }}"
-      alt="card-image "
-      class="card__image card__image--front"
-    />
+<div class="card">
+  <div class="card__content" (click)="toggleFlip()" [@flipState]="flip">
+    <div class="card__side card__side--front">Front</div>
+    <div class="card__side card__side--back">Back</div>
   </div>
-</li>
+</div>
