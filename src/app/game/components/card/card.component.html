@@ -1,5 +1,9 @@
 <div class="card">
-  <div class="card__content" (click)="toggleFlip(card)" [@flipState]="flip">
+  <div
+    class="card__content"
+    (click)="toggleFlip(card)"
+    [@flipState]="card.flipped ? 'active' : 'inactive'"
+  >
     <div class="card__side card__side--front">
       <img
         src="assets/default-image/letter-m.png"

@@ -16,7 +16,8 @@ export class CardComponent {
   flip: string = 'inactive';
 
   toggleFlip(card: Card) {
-    this.flip = this.flip == 'inactive' ? 'active' : 'inactive';
+    this.flip === 'inactive' ? 'active' : 'inactive';
+    card.flipped = !card.flipped;
     this.clickCard.emit(card);
   }
 }

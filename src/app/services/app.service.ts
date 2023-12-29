@@ -28,7 +28,7 @@ export class AppService {
     this.selectedCard = undefined;
   }
 
-  compareCards(card: Card) {
-    return this.selectedCard?.id === card.id;
+  compareCards(name: string) {
+    return this.selectedCard?.name === name;
   }
 }
