@@ -2,7 +2,7 @@
   <div class="game__container">
     <ul class="game__cards-list">
       <ng-container *ngFor="let card of cards$ | async">
-        <app-card [card]="card"></app-card>
+        <app-card [card]="card" (clickCard)="clickCard(card)"></app-card>
       </ng-container>
     </ul>
   </div>

@@ -1,7 +1,6 @@
-import { Component, inject, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 import { Card } from "../../../models/card.interface";
-import { AppService } from "../../../services/app.service";
 import { cardFlipAnimation } from "./card-flip.animation";
 
 @Component({
@@ -12,11 +11,12 @@ import { cardFlipAnimation } from "./card-flip.animation";
 })
 export class CardComponent {
   @Input() card!: Card;
+  @Output() clickCard = new EventEmitter();
+
   flip: string = 'inactive';
 
-  gameService = inject(AppService);
-
-  toggleFlip() {
+  toggleFlip(card: Card) {
     this.flip = this.flip == 'inactive' ? 'active' : 'inactive';
+    this.clickCard.emit(card);
   }
 }
